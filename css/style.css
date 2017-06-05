@@ -1,0 +1,278 @@
+*{
+    font-family: 'Yantramanav', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../images/the-blurred-819384_960_720.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+button:hover{
+    transition: 300ms!important;
+}
+progress {
+    height: 253px;
+    width: 390px;
+    border: 0;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    background-color: rgba(75, 74, 76, 0.1);
+}
+progress::-webkit-progress-bar {
+    background-color: rgba(75, 74, 76, 0.1);
+    border: 0;
+}
+progress::-webkit-progress-value {
+    border: 0;
+    transition: 400ms;
+}
+progress::-moz-progress-bar {
+    border: 0;
+}
+#progress-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nums-container{
+    position: absolute;
+    z-index: 99;
+}
+#nums-container>span{
+    font-size: 13px;
+}
+#nums-container>span>span{
+    font-size: 50px;
+}
+#timer-container{
+    margin: 163px 0 0 0 ;
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#button-container{
+    position: static;
+    margin: 75px 0 0 0;
+    z-index: 99;
+   cursor: context-menu;
+}
+#button-container>button{
+    width: 75px;
+    margin: 0 2px;
+    padding: 4px 4px;
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 25px;
+    outline: none;
+    transition: 300ms;
+}
+.start-btn{
+    border: 1px solid #006516!important;
+    color:  #006516;
+}
+.yellow-btn{
+    border: 1px solid #fff600!important;
+    color:   #fff600;
+}
+.reset-btn{
+    border: 1px solid #ff1a21!important;
+    color: #ff1a21;
+}
+.start-btn:hover{
+    background-color: rgba(42, 170, 89, 0.81)!important;
+    border:none!important;
+    color:black;
+}
+.yellow-btn:hover{
+    background-color: rgba(255, 246, 0, 0.68)!important;
+    border:none!important;
+    color:black;
+}
+.reset-btn:hover{
+    background-color: rgba(255, 26, 33, 0.68)!important;
+    border:none!important;
+    color:black;
+}
+::-webkit-progress-value {
+    background: -moz-linear-gradient(129deg, rgba(105,170,255,1) 0%, rgba(128,80,126,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(128,80,126,1)), color-stop(100%, rgba(105,170,255,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(129deg, rgba(105,170,255,1) 0%, rgba(128,80,126,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(129deg, rgba(105,170,255,1) 0%, rgba(128,80,126,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(129deg, rgba(105,170,255,1) 0%, rgba(128,80,126,1) 100%); /* ie10+ */
+    background: linear-gradient(321deg, rgba(105,170,255,1) 0%, rgba(128,80,126,1) 100%); /* w3c */
+}
+::-moz-progress-bar {
+    background: -moz-linear-gradient(129deg, rgba(105,170,255,1) 0%, rgba(128,80,126,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(128,80,126,1)), color-stop(100%, rgba(105,170,255,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(129deg, rgba(105,170,255,1) 0%, rgba(128,80,126,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(129deg, rgba(105,170,255,1) 0%, rgba(128,80,126,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(129deg, rgba(105,170,255,1) 0%, rgba(128,80,126,1) 100%); /* ie10+ */
+    background: linear-gradient(321deg, rgba(105,170,255,1) 0%, rgba(128,80,126,1) 100%); /* w3c */
+}
+#clocks-container{
+    position: relative;
+    width:175px;
+    margin:  0;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.times-container{
+    min-width: 175px;
+    min-height: 120px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(116, 115, 115, 0.2);
+}
+.times-container>:last-child>p{
+    text-align: center;
+}
+.times-container>div{
+    display: flex;
+    flex-direction: row;
+}
+.times-container>:last-child{
+    display: flex;
+    flex-direction: column;
+}
+.times-container>:last-child>:first-child{
+    font-size: 70px;
+}
+.times-container>:last-child>:last-child{
+    font-size: 25px;
+}
+#nums-stopwatch-container{
+    margin: 100px 0 0 0 ;
+    display: flex;
+    justify-content: center;
+}
+#nums-stopwatch-container>span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px!important;
+}
+#nums-stopwatch-container>span>p{
+    width: 47px;
+    font-size: 40px!important;
+}
+#stopwatch-container>:nth-child(2){
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+#stopwatch-container>:nth-child(2)>button{
+    width: 80px;
+    padding: 5px 5px;
+    margin: 0 5px;
+    border: 1px solid black;
+    font-size: 25px;
+    border-radius: 4px;
+    outline: none;
+    background-color: transparent;
+    transition: 300ms;
+}
+#laps-container{
+    position: relative;
+    width: 237px;
+    max-height: 320px;
+    margin: 20px 0 0 0;
+    overflow: visible;
+    overflow-x:hidden;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+}
+#laps-container::-webkit-scrollbar {
+    width: 0;
+}
+.lap-box{
+    position: relative;
+    right: 300px;
+    margin: 7px 0;
+    width: 220px;
+    display: flex;
+    border-radius: 20px;
+    justify-content: flex-end;
+    align-content: center;
+    font-size: 18px;
+    background-color: rgba(116, 115, 115, 0.3);
+}
+.delete-icon{
+    margin: 3px 4px 3px 10px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    -webkit-background-size: contain;
+    background-color: rgba(116, 115, 115, 0.7);
+    background-size: contain;
+    background-position: center;
+    background-image: url("../images/cross.png");
+}
+.delete-icon:hover{
+    background-color: rgba(116, 115, 115, 1);
+}
+#btn-stopwatch-container>button{
+    width: 72px!important;
+}
+#stopwatch-stop-bnt{
+    display: none;
+}
+#stopwatch-stop-bnt:hover{
+    background-color: rgba(42, 170, 89, 0.81)!important;
+    color: black;
+    border: none!important;
+}
+#stopwatch-lap-bnt:hover{
+    background-color: rgba(255, 246, 0, 0.68)!important;
+    color: black;
+    border: none!important;
+}
+#stopwatch-reset-bnt:hover{
+    background-color: rgba(255, 26, 33, 0.68)!important;
+    color: black;
+    border: none!important;
+}
+#stopwatch-start-bnt:hover{
+    background-color: rgba(42, 170, 89, 0.81)!important;
+    color: black;
+    border: none!important;
+    transition: 200ms;
+}
+.iphone-background{
+    padding: 0 5px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 640px;
+    width: 305px;
+    background-image: url("../images/b2235f688a6a5c0d83e187db8f53925346e392df.png");
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1020px) {
+    body,html{
+        height: 1500px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
